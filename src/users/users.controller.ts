@@ -48,7 +48,7 @@ export class UsersController {
 
   @UseGuards(AuthGuard)
   @Get('/whoami')
-  whoAmiI(@CurrentUser() user: string){
+  whoAmI(@CurrentUser() user: string){
     return user;
   }
 
